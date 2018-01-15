@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -78,15 +79,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm thinking of a number between 1 and 100. Can you guess it?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyZ-t1-SXq">
+                                <rect key="frame" x="24" y="72" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="WE0-5v-2uf" firstAttribute="top" secondItem="4wZ-en-dI7" secondAttribute="bottom" constant="8" id="0cS-O9-KmH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CyZ-t1-SXq" secondAttribute="trailing" constant="8" id="1ZV-1Z-DEJ"/>
+                            <constraint firstItem="CyZ-t1-SXq" firstAttribute="top" secondItem="duZ-Fs-ePT" secondAttribute="top" constant="8" id="Far-Sf-cfS"/>
                             <constraint firstItem="4wZ-en-dI7" firstAttribute="centerX" secondItem="DRM-iu-0zE" secondAttribute="centerX" id="Kzo-HD-iCL"/>
                             <constraint firstItem="4wZ-en-dI7" firstAttribute="top" secondItem="fTS-zz-4mU" secondAttribute="bottom" constant="8" id="Qpy-Ce-pZY"/>
                             <constraint firstItem="WE0-5v-2uf" firstAttribute="centerX" secondItem="DRM-iu-0zE" secondAttribute="centerX" id="XQI-BP-Vr5"/>
                             <constraint firstItem="WE0-5v-2uf" firstAttribute="centerY" secondItem="DRM-iu-0zE" secondAttribute="centerY" id="bBr-KI-3aG"/>
                             <constraint firstItem="fTS-zz-4mU" firstAttribute="centerX" secondItem="DRM-iu-0zE" secondAttribute="centerX" id="bYg-OM-SGC"/>
+                            <constraint firstItem="CyZ-t1-SXq" firstAttribute="top" secondItem="duZ-Fs-ePT" secondAttribute="top" constant="8" id="mYN-Aq-Av5"/>
+                            <constraint firstItem="CyZ-t1-SXq" firstAttribute="leading" secondItem="DRM-iu-0zE" secondAttribute="leadingMargin" constant="8" id="yQb-O1-Kiv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="duZ-Fs-ePT"/>
                     </view>

@@ -11,11 +11,12 @@ class RandomizlyModel {
   private(set) var tries = 0
   
   init() {
-    self.newNumber()
+    self.newRandomNumber()
   }
   
-  func newNumber() {
-    self.number = Int(arc4random_uniform(6) + 1)
+  func newRandomNumber() {
+    self.tries = 0
+    self.number = Int(arc4random_uniform(100) + 1)
   }
   
   func guess(_ guess: Int) -> GuessAnswer {

@@ -20,6 +20,9 @@ class GameViewController: UIViewController {
       switch result {
       case .correct:
         self.showAlert(title: "Victory", message: "You guessed the number correctly! Tries needed: \(tries)")
+        self.model.newRandomNumber()
+        self.inputField.text = ""
+        self.hintLabel.isHidden = true
       
       case .tooLow:
         self.hintLabel.text = "👆 HIGHER 📈"
