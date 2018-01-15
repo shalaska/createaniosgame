@@ -25,10 +25,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncw-KL-qfi">
-                                <rect key="frame" x="148" y="373" width="79" height="30"/>
-                                <state key="normal" title="Regenerate"/>
+                                <rect key="frame" x="171" y="373" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
-                                    <action selector="newRandomNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ow-al-o7l"/>
+                                    <segue destination="HAH-wh-8Qv" kind="show" id="xW8-CO-MIQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,12 +41,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="randomNumberLabel" destination="hIm-60-oEj" id="p5K-aZ-gNl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gj4-N0-3cV">
+            <objects>
+                <viewController id="HAH-wh-8Qv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DRM-iu-0zE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="duZ-Fs-ePT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HRG-EG-Jqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="32"/>
         </scene>
     </scenes>
 </document>
