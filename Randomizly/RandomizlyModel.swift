@@ -1,7 +1,8 @@
 import Foundation
 
 class RandomizlyModel {
-  var number = 0
+  private var number = 0
+  private(set) var tries = 0
   
   init() {
     self.newNumber()
@@ -12,6 +13,7 @@ class RandomizlyModel {
   }
   
   func guess(_ guess: Int) -> Bool {
+    self.tries += 1
     return self.number == guess
   }
   
